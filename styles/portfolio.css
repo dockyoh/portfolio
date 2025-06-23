@@ -6,9 +6,94 @@
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 64px;
+
+  --font-size-s: 1.125rem;
+  --h1-size: 1.9rem;
+}
+
 /* ======================================== */
-/*             GENERAL STYLES               */
+/*             GENERAL STYLE                */
 /* ======================================== */
+html,
 body {
-  background-color: lightgrey;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  /* border-right: 1px solid black; */
+}
+
+p,
+a,
+button {
+  font-size: var(--font-size-s);
+}
+
+/* ======================================== */
+/*             HEADER STYLE                 */
+/* ======================================== */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+  padding: var(--spacing-l) 0;
+}
+
+.header-title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: var(--h1-size);
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* ======================================== */
+/*             HERO STYLE                   */
+/* ======================================== */
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+  margin-top: var(--spacing-xl);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+
+.hero-buttons button {
+  font-weight: bold;
+  padding: var(--spacing-s) var(--spacing-l);
+  /* border: none; */
+}
+
+.hero-work-btn {
+  margin-right: var(--spacing-m);
 }
