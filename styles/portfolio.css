@@ -113,6 +113,13 @@ a {
   line-height: 1.5;
 }
 
+.hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-l);
+}
+
 /* ======================================== */
 /*             SKILLS STYLE                 */
 /* ======================================== */
