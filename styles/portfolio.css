@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  object-fit: cover;
-  font-family: "Roboto", sans-serif;
-}
-
 :root {
   --spacing-s: 8px;
   --spacing-m: 16px;
@@ -14,6 +6,21 @@
 
   --font-size-s: 1.125rem;
   --h1-size: 1.9rem;
+
+  --primary-color: #0abab5;
+  --secondary-color: #56dfcf;
+  --light-color: #393e46;
+  --super-light-color: #393e4688;
+  --dark-color: #222831;
+  --background-color: #fffdf6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ======================================== */
@@ -25,20 +32,29 @@ body {
 }
 
 body {
-  background-color: rgb(243, 243, 243);
+  background-color: var(--background-color);
+  color: var(--dark-color);
 }
 
 .container {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
-  border: 1px solid black;
-  /* border-right: 1px solid black; */
 }
 
 p,
-a,
-button {
+a {
   font-size: var(--font-size-s);
+  color: var(--light-color);
+}
+
+.primary-button {
+  font-size: var(--font-size-s);
+  font-weight: bold;
+  padding: var(--spacing-s) var(--spacing-l);
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 /* ======================================== */
@@ -70,30 +86,61 @@ button {
 
 .header-links a {
   text-decoration: none;
-  color: black;
   font-weight: bold;
+  color: var(--dark-color);
 }
 
 /* ======================================== */
 /*             HERO STYLE                   */
 /* ======================================== */
 .hero .container {
+  padding: var(--spacing-xl) 0;
+}
+
+.hero-placeholder {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-m);
-  margin-top: var(--spacing-xl);
+  gap: var(--spacing-l);
+  width: 50%;
 }
 
 .hero-title {
   font-size: 3.5rem;
+  color: var(--dark-color);
 }
 
-.hero-buttons button {
-  font-weight: bold;
-  padding: var(--spacing-s) var(--spacing-l);
-  /* border: none; */
+.hero-subtitle {
+  line-height: 1.5;
 }
 
-.hero-work-btn {
-  margin-right: var(--spacing-m);
+/* ======================================== */
+/*             SKILLS STYLE                 */
+/* ======================================== */
+.skills {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: var(--spacing-l) 0;
+}
+
+.skills-techs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+}
+
+.skills-github-icon {
+  width: 25px;
+}
+
+.skills-techs h3 {
+  color: var(--super-light-color);
 }
