@@ -319,7 +319,7 @@ header * {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("/assets/mail1.png");
+  background-image: url("../assets/mail1.png");
   margin-right: var(--spacing-s);
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,7 +331,7 @@ header * {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("/assets/linkedin2.png");
+  background-image: url("../assets/linkedin2.png");
   margin-right: var(--spacing-s);
   background-size: cover;
   background-repeat: no-repeat;
@@ -343,7 +343,7 @@ header * {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("/assets/github-contact3.png");
+  background-image: url("../assets/github-contact3.png");
   margin-right: var(--spacing-s);
   background-size: cover;
   background-repeat: no-repeat;
