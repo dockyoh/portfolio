@@ -15,6 +15,7 @@
   --background-color: #fffdf6;
 
   --standard-radius: 8px;
+  --circle-radius: 50%;
 }
 
 * {
@@ -47,6 +48,11 @@ p,
 a {
   font-size: var(--font-size-s);
   color: var(--light-color);
+  text-decoration: none;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 .primary-button {
@@ -97,7 +103,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: var(--dark-color);
-  /* padding: var(--spacing-s); */
   transition: all 0.15s ease;
 }
 
@@ -122,6 +127,7 @@ a {
 .hero-title {
   font-size: 3.5rem;
   color: var(--dark-color);
+  text-transform: initial;
 }
 
 .hero-subtitle {
@@ -168,26 +174,33 @@ a {
 }
 
 /* ======================================== */
-/*             PROJECTS STYLE                 */
+/*             PROJECTS STYLE               */
 /* ======================================== */
 .projects {
   border-bottom: 1px solid var(--light-color);
+  padding: var(--spacing-l) 0;
 }
 
 .projects .container {
   display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m) 0;
+}
+
+.projects-container {
+  display: flex;
   justify-content: flex-start;
   gap: var(--spacing-m);
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-m) 0;
 }
 
 .project-image {
-  width: 40%;
+  width: 30%;
   border-radius: var(--standard-radius);
 }
 
 .project-info {
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -199,3 +212,94 @@ a {
   align-items: center;
   gap: var(--spacing-l);
 }
+
+.project-title {
+  text-transform: initial;
+}
+
+/* ======================================== */
+/*             ABOUT STYLE                  */
+/* ======================================== */
+.about {
+  padding: var(--spacing-l) 0;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.about-profile-pic {
+  width: 150px;
+  border-radius: var(--circle-radius);
+}
+
+.about-infos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+/* ======================================== */
+/*             CONTACT STYLE                */
+/* ======================================== */
+.contact {
+  padding: var(--spacing-l) 0;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-list .contact-email::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/mail.png");
+  margin-right: var(--spacing-s);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.contact-list .contact-linkedin::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/linkedin.png");
+  margin-right: var(--spacing-s);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.contact-list .contact-github::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("/assets/github-contact.png");
+  margin-right: var(--spacing-s);
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* ======================================== */
+/*             FOOTER STYLE                 */
+/* ======================================== */
