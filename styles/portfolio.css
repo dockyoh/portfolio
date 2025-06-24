@@ -16,6 +16,8 @@
 
   --standard-radius: 8px;
   --circle-radius: 50%;
+
+  --standard-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
 }
 
 * {
@@ -198,6 +200,7 @@ h2 {
 .project-image {
   width: 30%;
   border-radius: var(--standard-radius);
+  box-shadow: var(--standard-shadow);
 }
 
 .project-info {
@@ -234,6 +237,7 @@ h2 {
 .about-profile-pic {
   width: 150px;
   border-radius: var(--circle-radius);
+  box-shadow: var(--standard-shadow);
 }
 
 .about-infos {
@@ -247,7 +251,7 @@ h2 {
 /*             CONTACT STYLE                */
 /* ======================================== */
 .contact {
-  padding: var(--spacing-l) 0;
+  padding: var(--spacing-xl) 0;
   border-bottom: 1px solid var(--dark-color);
 }
 
@@ -303,3 +307,12 @@ h2 {
 /* ======================================== */
 /*             FOOTER STYLE                 */
 /* ======================================== */
+footer {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--dark-color);
+}
+
+.footer-motivation {
+  text-align: center;
+  color: var(--background-color);
+}
