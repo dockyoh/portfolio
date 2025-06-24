@@ -18,6 +18,7 @@
   --circle-radius: 50%;
 
   --standard-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
+  --light-shadow: 0px 0px 10px 0px rgba(73, 73, 73, 0.5);
 }
 
 * {
@@ -77,6 +78,16 @@ h2 {
 /* ======================================== */
 /*             HEADER STYLE                 */
 /* ======================================== */
+header {
+  background-color: var(--super-light-color);
+  border-bottom-left-radius: calc(var(--standard-radius) * 3);
+  border-bottom-right-radius: calc(var(--standard-radius) * 3);
+}
+
+header * {
+  color: var(--background-color);
+}
+
 .header-nav {
   display: flex;
   justify-content: space-between;
@@ -102,14 +113,15 @@ h2 {
 }
 
 .header-links a {
-  text-decoration: none;
   font-weight: bold;
-  color: var(--dark-color);
   transition: all 0.15s ease;
+  border-radius: var(--standard-radius);
+  padding: 5px;
 }
 
 .header-links a:hover {
-  border-bottom: 1px solid var(--dark-color);
+  /* border-bottom: 1px solid var(--dark-color); */
+  box-shadow: var(--light-shadow);
 }
 
 /* ======================================== */
@@ -197,10 +209,16 @@ h2 {
   padding: var(--spacing-m) 0;
 }
 
+.projects-container:hover .project-image {
+  background-color: pink;
+  transform: scale(1.02);
+}
+
 .project-image {
   width: 30%;
   border-radius: var(--standard-radius);
   box-shadow: var(--standard-shadow);
+  transition: all 0.15s ease;
 }
 
 .project-info {
@@ -252,7 +270,6 @@ h2 {
 /* ======================================== */
 .contact {
   padding: var(--spacing-xl) 0;
-  border-bottom: 1px solid var(--dark-color);
 }
 
 .contact .container {
@@ -266,6 +283,15 @@ h2 {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.contact-list a {
+  border-radius: var(--standard-radius);
+  padding: var(--spacing-s);
+}
+
+.contact-list a:hover {
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .contact-list .contact-email::before {
@@ -310,6 +336,8 @@ h2 {
 footer {
   padding: var(--spacing-xl) 0;
   background-color: var(--dark-color);
+  border-top-left-radius: calc(var(--standard-radius) * 3);
+  border-top-right-radius: calc(var(--standard-radius) * 3);
 }
 
 .footer-motivation {
