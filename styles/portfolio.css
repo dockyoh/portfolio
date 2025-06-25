@@ -218,8 +218,8 @@ header * {
 .projects .container {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-m);
-  padding: var(--spacing-m) 0;
+  gap: var(--spacing-l);
+  padding: var(--spacing-l) 0;
 }
 
 .projects-container {
@@ -235,10 +235,12 @@ header * {
 }
 
 .project-image {
-  width: 30%;
+  width: 300px;
+  height: 250px;
   border-radius: var(--standard-radius);
   box-shadow: var(--standard-shadow);
   transition: all 0.15s ease;
+  object-fit: cover;
 }
 
 .project-info {
