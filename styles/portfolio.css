@@ -262,14 +262,14 @@ header * {
 /*             ABOUT STYLE                  */
 /* ======================================== */
 .about {
-  padding: var(--spacing-l) 0;
+  padding: var(--spacing-xl) 0;
   border-bottom: 1px solid var(--dark-color);
 }
 
 .about .container {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-l);
+  gap: var(--spacing-xl);
 }
 
 .about-profile-pic {
@@ -281,8 +281,17 @@ header * {
 .about-infos {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  gap: var(--spacing-m);
+  align-items: flex-start;
+  gap: var(--spacing-l);
+}
+
+.about-details-container > p {
+  margin-bottom: var(--spacing-m);
+}
+
+.about-details:nth-child(1),
+.about-details span {
+  font-weight: bold;
 }
 
 /* ======================================== */
