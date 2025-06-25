@@ -95,6 +95,8 @@ h2 {
   gap: var(--spacing-s);
   cursor: pointer;
   margin-right: var(--spacing-s);
+  width: 33px;
+  padding-left: 3px;
 }
 
 .burger-bar {
@@ -116,7 +118,9 @@ h2 {
   animation: 0.5s ease-in forwards flip-up;
 }
 
-/* BURGER ANIMATION */
+/* ======================================== */
+/*             BURGER ANIMATION             */
+/* ======================================== */
 @keyframes flip-down {
   from {
     transform: rotate(0);
