@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     id: "7",
-    title: "A&D Trading (E-commerce)",
+    title: "A&D Trading",
     description:
       "A basic e-commerce app that displays products, allows users to add items to a cart, and simulates a checkout process.",
     techStack: "Tech Stack: HTML, CSS, JS",
