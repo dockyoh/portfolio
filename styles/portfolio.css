@@ -354,6 +354,7 @@ header * {
 
 .project-image {
   width: 20%;
+  min-width: 195px;
   border-radius: var(--standard-radius);
   box-shadow: var(--standard-shadow);
   transition: all 0.15s ease;
@@ -372,6 +373,12 @@ header * {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--spacing-l);
+}
+
+.project-buttons a {
+  width: 150px;
+  padding: var(--spacing-s) 0;
+  text-align: center;
 }
 
 .project-title {
@@ -529,6 +536,25 @@ footer {
 
   .skills .container {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .projects-container {
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--light-color);
+    border-radius: var(--standard-radius);
+    padding: var(--spacing-s);
+  }
+
+  .project-info {
+    width: 100%;
+    gap: var(--spacing-m);
+  }
+
+  .project-image {
+    height: 175px;
   }
 }
 
