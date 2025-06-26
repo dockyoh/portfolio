@@ -306,7 +306,6 @@ header * {
 .skills .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   padding: var(--spacing-l) 0;
   gap: var(--spacing-l);
@@ -400,7 +399,9 @@ header * {
 }
 
 .about-profile-pic {
-  width: 150px;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
   border-radius: var(--circle-radius);
   box-shadow: var(--standard-shadow);
 }
@@ -555,6 +556,15 @@ footer {
 
   .project-image {
     height: 175px;
+  }
+
+  .about-infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-details {
+    text-align: justify;
   }
 }
 
