@@ -87,7 +87,6 @@ h2 {
 /*             BURGER STYLE                 */
 /* ======================================== */
 .burger {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,6 +96,7 @@ h2 {
   margin-right: var(--spacing-s);
   width: 33px;
   padding-left: 3px;
+  display: none;
 }
 
 .burger-bar {
@@ -106,15 +106,15 @@ h2 {
   border-radius: var(--standard-radius);
 }
 
-.burger-bar:nth-child(1) {
+.animate-burger:nth-child(1) {
   animation: 0.5s ease-in forwards flip-down;
 }
 
-.burger-bar:nth-child(2) {
+.animate-burger:nth-child(2) {
   animation: 0.5s ease-in forwards shrink;
 }
 
-.burger-bar:nth-child(3) {
+.animate-burger:nth-child(3) {
   animation: 0.5s ease-in forwards flip-up;
 }
 
@@ -213,10 +213,24 @@ header * {
   height: 100vh;
   width: 100px;
   right: 0;
-  /* z-index: 1; */
   background-color: var(--light-color);
   border-bottom-left-radius: calc(var(--standard-radius) * 3);
-  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--spacing-m);
+  display: none;
+}
+
+.drawer-close {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.drawer-close-icon {
+  width: 100%;
 }
 
 .drawer-list-item a {
@@ -228,8 +242,8 @@ header * {
 }
 
 .drawer-list {
-  border: 1px solid red;
   height: 100%;
+  width: 100%;
   border-bottom-left-radius: calc(var(--standard-radius) * 3);
   display: flex;
   flex-direction: column;
@@ -253,11 +267,11 @@ header * {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-l);
-  width: 50%;
+  width: 100%;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: clamp(3rem, 10vw, 3.5rem);
   color: var(--dark-color);
   text-transform: initial;
 }
@@ -270,7 +284,15 @@ header * {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--spacing-l);
+}
+
+.hero-buttons a {
+  width: 150px;
+  min-width: 150px;
+  padding: var(--spacing-s) 0;
+  text-align: center;
 }
 
 /* ======================================== */
@@ -493,5 +515,9 @@ footer {
 @media only screen and (max-width: 810px) {
   .header-links {
     display: none;
+  }
+
+  .burger {
+    display: flex;
   }
 }
