@@ -332,7 +332,7 @@ header * {
 /* ======================================== */
 .projects {
   border-bottom: 1px solid var(--light-color);
-  padding: var(--spacing-l) 0;
+  padding: var(--spacing-xl) 0;
 }
 
 .projects-parent {
@@ -440,7 +440,7 @@ header * {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: var(--spacing-m);
 }
 
@@ -565,6 +565,24 @@ footer {
 
   .about-details {
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills h2,
+  .projects h2,
+  .about h2,
+  .contact h2 {
+    text-align: center;
+  }
+
+  .project-info h2 {
+    text-align: initial;
   }
 }
 
