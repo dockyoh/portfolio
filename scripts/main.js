@@ -1,3 +1,4 @@
+import { animateBurger } from "./animation.js";
 import {
   hideNavigation,
   renderProjects,
@@ -16,4 +17,8 @@ window.addEventListener("scroll", (event) => {
     showNavigation();
   }
   lastScrollY = window.scrollY;
+});
+
+document.querySelector(".burger").addEventListener("click", (event) => {
+  animateBurger();
 });

@@ -94,8 +94,6 @@ h2 {
   gap: var(--spacing-s);
   cursor: pointer;
   margin-right: var(--spacing-s);
-  width: 33px;
-  padding-left: 3px;
   display: none;
 }
 
@@ -107,15 +105,15 @@ h2 {
 }
 
 .animate-burger:nth-child(1) {
-  animation: 0.5s ease-in forwards flip-down;
+  animation: 0.15s ease forwards flip-down;
 }
 
 .animate-burger:nth-child(2) {
-  animation: 0.5s ease-in forwards shrink;
+  animation: 0.15s ease forwards shrink;
 }
 
 .animate-burger:nth-child(3) {
-  animation: 0.5s ease-in forwards flip-up;
+  animation: 0.15s ease forwards flip-up;
 }
 
 /* ======================================== */
