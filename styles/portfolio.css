@@ -309,6 +309,7 @@ header * {
   align-items: center;
   flex-wrap: wrap;
   padding: var(--spacing-l) 0;
+  gap: var(--spacing-l);
 }
 
 .skills-techs {
@@ -519,5 +520,14 @@ footer {
 
   .burger {
     display: flex;
+  }
+
+  .skills-techs {
+    gap: var(--spacing-l);
+    width: 100%;
+  }
+
+  .skills .container {
+    flex-direction: column;
   }
 }
