@@ -562,4 +562,8 @@ footer {
   .hero-buttons {
     justify-content: space-around;
   }
+
+  .project-buttons {
+    justify-content: center;
+  }
 }
