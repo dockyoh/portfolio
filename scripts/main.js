@@ -1,4 +1,4 @@
-import { animateBurger } from "./animation.js";
+import { animateBurger, drawerHide, showMobileDrawer } from "./animation.js";
 import {
   hideNavigation,
   renderProjects,
@@ -21,4 +21,16 @@ window.addEventListener("scroll", (event) => {
 
 document.querySelector(".burger").addEventListener("click", (event) => {
   animateBurger();
+  showMobileDrawer();
+});
+
+document.querySelector(".drawer-close").addEventListener("click", (event) => {
+  showMobileDrawer();
+  animateBurger();
+});
+
+window.addEventListener("resize", (event) => {
+  if (window.innerWidth > 810) {
+    drawerHide();
+  }
 });
