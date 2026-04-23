@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "8",
+    title: "Drum Kit",
+    description:
+      "An interactive Vanilla JavaScript drum kit that transforms your browser into a musical instrument. This app uses Event Listeners to map keyboard presses to high-quality audio samples, featuring a responsive UI with dynamic CSS animations for real-time visual feedback.",
+    techStack: "Tech Stack: HTML, CSS, JS",
+    liveDemo: "https://dockyoh.github.io/drum-kit/",
+    sourceCode: "https://github.com/dockyoh/drum-kit/tree/master/scripts",
+    image: "assets/drum-kit.png",
+  },
+  {
     id: "1",
     title: "To do list",
     description:
