@@ -1,12 +1,22 @@
 export const projects = [
   {
+    id: "9",
+    title: "Clock",
+    description:
+      "A sleek, browser-based digital clock designed for clarity and focus. This lightweight app provides real-time precision with a distraction-free interface, perfect for full-screen desktop displays",
+    techStack: "Tech Stack: HTML, CSS, JS",
+    liveDemo: "https://dockyoh.github.io/clock/",
+    sourceCode: "https://github.com/dockyoh/clock/tree/master/scripts",
+    image: "assets/clock.png",
+  },
+  {
     id: "8",
     title: "Drum Kit",
     description:
       "An interactive Vanilla JavaScript drum kit that transforms your browser into a musical instrument. This app uses Event Listeners to map keyboard presses to high-quality audio samples, featuring a responsive UI with dynamic CSS animations for real-time visual feedback.",
     techStack: "Tech Stack: HTML, CSS, JS",
     liveDemo: "https://dockyoh.github.io/drum-kit/",
-    sourceCode: "https://github.com/dockyoh/drum-kit/tree/master/scripts",
+    sourceCode: "https://github.com/dockyoh/clock/tree/master/scripts",
     image: "assets/drum-kit.png",
   },
   {
