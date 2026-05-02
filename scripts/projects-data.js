@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: "10",
+    title: "Playing-with-CSS-variable-and-JS",
+    description:
+      "The padding, blur effect, and background color change in real time as the range and color pickers are adjusted.",
+    techStack: "Tech Stack: HTML, CSS, JS",
+    liveDemo: "https://dockyoh.github.io/Playing-with-CSS-variable-and-JS/",
+    sourceCode:
+      "https://github.com/dockyoh/Playing-with-CSS-variable-and-JS/blob/master/cssVariable.js",
+    image: "assets/playing with css variable.png",
+  },
+  {
     id: "9",
     title: "Clock",
     description:
