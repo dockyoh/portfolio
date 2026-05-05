@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "11",
-    title: "Pannel Window",
+    title: "Panel Window",
     description: "",
     techStack: "Tech Stack: HTML, CSS, JS",
     liveDemo: "https://dockyoh.github.io/Window-Panel/",
