@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "11",
+    title: "Pannel Window",
+    description: "",
+    techStack: "Tech Stack: HTML, CSS, JS",
+    liveDemo: "https://dockyoh.github.io/Window-Panel/",
+    sourceCode:
+      "https://github.com/dockyoh/Window-Panel/blob/master/panel-window.css",
+    image: "assets/pannel-window.png",
+  },
+  {
     id: "10",
     title: "Playing-with-CSS-variable-and-JS",
     description:
