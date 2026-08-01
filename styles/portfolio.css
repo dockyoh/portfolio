@@ -299,35 +299,57 @@ header * {
 }
 
 /* ======================================== */
-/*             SKILLS STYLE                 */
+/*             TECH STACK STYLE                 */
 /* ======================================== */
 .skills {
   border-top: 1px solid var(--dark-color);
   border-bottom: 1px solid var(--dark-color);
 }
 
-.skills .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: var(--spacing-l) 0;
-  gap: var(--spacing-l);
-}
-
-.skills-techs {
+.skills .tech-stack-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--spacing-xl);
+  padding: var(--spacing-m) 0;
+  gap: var(--spacing-l);
+  margin: auto;
+}
+
+.skills-tech {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-l);
+}
+
+.skills-tech h3 {
+  color: var(--super-light-color);
 }
 
 .skills-github-icon {
-  width: 25px;
+  width: 80px;
 }
 
-.skills-techs h3 {
-  color: var(--super-light-color);
+.tech-stack-laravel-icon {
+  width: 125px;
+}
+
+.tech-stack-css-icon {
+  width: 120px;
+}
+
+.tech-stack-html-icon {
+  width: 62px;
+}
+
+.tech-stack-php-icon {
+  width: 80px;
+}
+
+.tech-stack-logo {
+  width: 60px;
 }
 
 /* ======================================== */
@@ -509,6 +531,14 @@ footer {
 .footer-motivation {
   text-align: center;
   color: var(--background-color);
+}
+
+.footer-copyrights {
+  text-align: center;
+  color: var(--background-color);
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-top: var(--spacing-s);
 }
 
 /* ======================================== */
