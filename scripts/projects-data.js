@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "12",
+    title: "Task-Todo App",
+    description: "Simple fullstack CRUD app",
+    techStack:
+      "Tech Stack: HTML, CSS, JS, PHP, Laravel, mySQL, Docker, DBeaver, AWS EC2",
+    liveDemo: "http://54.169.170.98/",
+    sourceCode: "https://github.com/dockyoh/laravel-todolist",
+    image: "assets/laravel-task-2026.png",
+  },
+  {
     id: "11",
     title: "Panel Window",
     description: "",
