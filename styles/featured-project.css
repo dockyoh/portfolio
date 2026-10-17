@@ -1,0 +1,114 @@
+:root {
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 64px;
+
+  --font-size-s: 1.125rem;
+  --h1-size: 1.9rem;
+
+  --primary-color: #0abab5;
+  --secondary-color: #56dfcf;
+  --light-color: #393e46b9;
+  --super-light-color: #393e46;
+  --dark-color: #222831;
+  --background-color: #fffdf6;
+
+  --standard-radius: 8px;
+  --circle-radius: 50%;
+
+  --standard-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
+  --light-shadow: 0px 0px 10px 0px rgba(177, 177, 177, 0.5);
+}
+
+.featured-project-container {
+  width: 100%;
+  /* height: 80vh; */
+  max-height: 585px;
+  /* border: 1px solid black; */
+  border-radius: var(--spacing-m);
+  padding: var(--spacing-m);
+  background-color: var(--light-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+.featured-project-container h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: var(--spacing-m);
+}
+
+.featured-project-container img {
+  width: 35%;
+  /* border: 1px solid red; */
+  border-radius: var(--spacing-m);
+  box-shadow: var(--standard-shadow);
+  transition: all 0.15s ease-in-out;
+}
+
+.featured-project-container:hover img {
+  transform: scale(1.02);
+}
+
+.featured-wrapper {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-xl);
+  width: 100%;
+  height: 100%;
+}
+
+.featured-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: skyblue; */
+  width: 100%;
+  height: 100%;
+  gap: var(--spacing-xl);
+}
+
+.featured-details h3 {
+  font-size: 2.5rem;
+}
+
+.featured-details p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.buttons-container {
+  /* border: 1px solid black; */
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.featured-details a {
+  background-color: var(--primary-color);
+  border: none;
+  padding: var(--spacing-s);
+  color: var(--dark-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: var(--spacing-s);
+  cursor: pointer;
+  width: 111px;
+  text-align: center;
+  transition: all 0.15s ease-in-out;
+}
+
+.featured-details a:hover {
+  background-color: black;
+  color: white;
+}
