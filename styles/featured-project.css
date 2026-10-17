@@ -9,7 +9,7 @@
 
   --primary-color: #0abab5;
   --secondary-color: #56dfcf;
-  --light-color: #393e46b9;
+  --light-color: #393e46af;
   --super-light-color: #393e46;
   --dark-color: #222831;
   --background-color: #fffdf6;
@@ -19,16 +19,16 @@
 
   --standard-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.76);
   --light-shadow: 0px 0px 10px 0px rgba(177, 177, 177, 0.5);
+  --super-light-shadow: 0px 0px 10px 0px rgba(224, 224, 224, 0.5);
 }
 
 .featured-project-container {
   width: 100%;
   /* height: 80vh; */
-  max-height: 585px;
-  /* border: 1px solid black; */
+  height: 500px;
   border-radius: var(--spacing-m);
   padding: var(--spacing-m);
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   color: white;
   display: flex;
   flex-direction: column;
@@ -44,10 +44,11 @@
 }
 
 .featured-project-container img {
-  width: 35%;
+  width: 100%;
+  height: 100%;
   /* border: 1px solid red; */
   border-radius: var(--spacing-m);
-  box-shadow: var(--standard-shadow);
+  box-shadow: var(--super-light-shadow);
   transition: all 0.15s ease-in-out;
 }
 
@@ -65,13 +66,18 @@
   height: 100%;
 }
 
+.featured-wrapper .image-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
 .featured-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* background-color: skyblue; */
-  width: 100%;
+  width: 50%;
   height: 100%;
   gap: var(--spacing-xl);
 }
@@ -89,6 +95,7 @@
 .buttons-container {
   /* border: 1px solid black; */
   width: 50%;
+  min-width: 242px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,4 +118,53 @@
 .featured-details a:hover {
   background-color: black;
   color: white;
+}
+
+/* RESPONSIVE SECTION */
+
+@media only screen and (max-width: 800px) {
+  .featured-project-container {
+    background-color: purple;
+    height: 345px;
+  }
+
+  .featured-wrapper {
+    height: 100%;
+  }
+
+  .featured-details h3 {
+    font-size: 2rem;
+  }
+
+  .featured-details p {
+    font-size: 1rem;
+  }
+
+  .featured-details {
+    gap: var(--spacing-s);
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .featured-details h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 537px) {
+  .featured-details h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 483px) {
+  .featured-details a {
+    font-size: 1rem;
+    width: 92px;
+  }
+
+  .featured-details h3 {
+    font-size: 1.4rem;
+  }
 }
